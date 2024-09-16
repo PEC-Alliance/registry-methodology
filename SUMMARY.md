@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Overview](README.md)
+* [Glossary](glossary.md)
 * [Hourly Timestamp](hourly-timestamp.md)
 * [Carbon Impact](carbon-impact/README.md)
   * [Emissions Source Hierarchy](carbon-impact/emissions-source-hierarchy.md)

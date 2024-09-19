@@ -2,13 +2,16 @@
 
 * [Overview](README.md)
 * [Glossary](glossary.md)
-* [Hourly Timestamp](hourly-timestamp.md)
-* [Carbon Impact](carbon-impact/README.md)
-  * [Emissions Source Hierarchy](carbon-impact/emissions-source-hierarchy.md)
 
-## ATTRIBUTES
+## PRIMARY ATTRIBUTES
 
-* [Additionality Indicators](attributes/additionality-indicators.md)
-* [Human Health Impact](attributes/human-health-impact.md)
-* [Community Impact and Social Justice](attributes/community-impact-and-social-justice.md)
-* [Wildlife Conservation and Habitat](attributes/wildlife-conservation-and-habitat.md)
+* [Hourly Timestamp](primary-attributes/hourly-timestamp.md)
+* [Carbon Impact](primary-attributes/carbon-impact/README.md)
+  * [Emissions Source Hierarchy](primary-attributes/carbon-impact/emissions-source-hierarchy.md)
+
+## OTHER ATTRIBUTES
+
+* [Additionality Indicators](other-attributes/additionality-indicators.md)
+* [Human Health Impact](other-attributes/human-health-impact.md)
+* [Community Impact and Social Justice](other-attributes/community-impact-and-social-justice.md)
+* [Wildlife Conservation and Habitat](other-attributes/wildlife-conservation-and-habitat.md)

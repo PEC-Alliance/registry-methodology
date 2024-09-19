@@ -1,2 +1,0 @@
-# Hourly Timestamp
-

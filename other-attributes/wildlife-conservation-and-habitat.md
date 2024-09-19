@@ -12,7 +12,3 @@ We have adopted the comprehensive matrix provided by The Nature Conservancy (TNC
 * SDG 12: Responsible Consumption and Production
 * SDG 14: Life Below Water
 * SDG 15: Life on Land
-
-***
-
-Casey, Quantum can provide this \[GU1]

@@ -4,6 +4,20 @@ hidden: true
 
 # Hourly Timestamp
 
+## Process Overview
+
+1. Data Quality Checks
+2. Split Data into whole and partial megawatt-hour records
+3. Assign REC-IDs and PEC-IDs
+
+## Data Quality Checks
+
+
+
+
+
+
+
 Meter data collected from the project is used to assign an hourly timestamp to the issued RECs using the following process:
 
 1. For each hour of the generation data,&#x20;

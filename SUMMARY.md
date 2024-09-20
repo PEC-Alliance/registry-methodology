@@ -2,6 +2,7 @@
 
 * [Overview](README.md)
 * [Glossary](glossary.md)
+* [Data Collection](data-collection.md)
 
 ## PRIMARY ATTRIBUTES
 

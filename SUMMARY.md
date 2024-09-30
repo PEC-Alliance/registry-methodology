@@ -2,20 +2,26 @@
 
 * [Overview](README.md)
 * [Glossary](glossary.md)
-* [Project Eligibility](project-eligibility.md)
-* [Data Collection](data-collection.md)
 * [Project Impact Report](project-impact-report.md)
 * [EAC Registry Integration](eac-registry-integration.md)
 
-## PRIMARY ATTRIBUTES
+## PROCESS
 
-* [Hourly Timestamp](primary-attributes/hourly-timestamp.md)
-* [Carbon Impact](primary-attributes/carbon-impact/README.md)
-  * [Emissions Source Hierarchy](primary-attributes/carbon-impact/emissions-source-hierarchy.md)
-* [Additionality Indicators](primary-attributes/additionality-indicators.md)
+* [Project Onboarding](process/project-onboarding.md)
+* [Data Collection](process/data-collection.md)
+* [Meter Data Quality Checks](process/meter-data-quality-checks.md)
+* [Split Meter Data](process/split-meter-data.md)
+* [Assign EAC and  PEC IDs](process/assign-eac-and-pec-ids.md)
+* [Splitting PECs into Smaller Quantities](process/splitting-pecs-into-smaller-quantities.md)
+
+## CARBON IMPACT
+
+* [Integrating Marginal Emissions Rate (MER) with PECs](carbon-impact/integrating-marginal-emissions-rate-mer-with-pecs.md)
+* [Emissions Source Hierarchy](carbon-impact/emissions-source-hierarchy.md)
 
 ## OTHER ATTRIBUTES
 
+* [Additionality Indicators](other-attributes/additionality-indicators.md)
 * [Human Health Impact](other-attributes/human-health-impact.md)
 * [Community Impact and Social Justice](other-attributes/community-impact-and-social-justice.md)
 * [Wildlife Conservation and Habitat](other-attributes/wildlife-conservation-and-habitat.md)

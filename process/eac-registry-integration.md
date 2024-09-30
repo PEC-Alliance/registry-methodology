@@ -9,7 +9,7 @@ The process will follow a few key steps to ensure seamless interaction and avoid
 
 This process aligns with the proposals designed by organizations like EnergyTag and others, which aim to create hourly RECs. By integrating PECs with existing REC registries and retirement processes, the environmental attributes of renewable energy can be tracked and verified more effectively, ensuring transparency and credibility in corporate sustainability reporting.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Double-Counting
 

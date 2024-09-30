@@ -1,4 +1,4 @@
-# Assign EAC and  PEC IDs
+# Assign EAC IDs and  PEC IDs
 
 ## **Objective**
 
@@ -10,7 +10,7 @@ This specification outlines the methodology for assigning EAC IDs and PEC IDs to
 
 * Represents 1.0 MWh of renewable energy generated.
 * Assigned a unique **EAC ID**.
-* Can be composed of whole, remainder, and carryover energy records that sum to 1.0 MWh.
+* Can be composed of whole, remainder, and filler energy records that sum to 1.0 MWh.
 
 **Power Emissions Certificate (PEC):**
 
@@ -26,15 +26,15 @@ This specification outlines the methodology for assigning EAC IDs and PEC IDs to
   * Each **Whole** record is assigned a **unique EAC ID**.
   * Represents a full 1.0 MWh generated within a single hour.
   * EAC IDs follow the format of the issuing EAC registry.
-* **Remainder and Carryover Records:**
-  * **Remainder** and corresponding **Carryover** records that together sum to 1.0 MWh are assigned the **same EAC ID**.
+* **Remainder and Filler Records:**
+  * **Remainder** and corresponding **Filler** records that together sum to 1.0 MWh are assigned the **same EAC ID**.
   * This EAC ID is unique and different from those assigned to Whole records.
   * Ensures that the combined energy totaling 1.0 MWh is tracked under a single EAC.
 
 ### **Assigning PEC IDs**
 
 * **All Records:**
-  * Every individual record (Whole, Remainder, Carryover) is assigned a **unique PEC ID**.
+  * Every individual record (Whole, Remainder, Filler) is assigned a **unique PEC ID**.
   * PEC IDs uniquely identify each fraction or whole unit of energy within the registry.
   * PEC IDs are associated with their corresponding EAC IDs for traceability.
 
@@ -60,7 +60,7 @@ This specification outlines the methodology for assigning EAC IDs and PEC IDs to
    * **Example:** `20240928` (for September 28, 2024)
 4. **SequentialNumber:**
    * A sequential number to ensure uniqueness among PECs issued on the same date for the same project and EAC.
-   * Starts from `0001` and increments by one for each new PEC.
+   * Starts from `1` and increments by one for each new PEC.
    * **Example:** `0001`
 5. **Energy\_ID:**
    * A seven-digit value representing the energy amount in watt-hours (Wh).
@@ -73,4 +73,4 @@ This specification outlines the methodology for assigning EAC IDs and PEC IDs to
 
 ## **Conclusion**
 
-This specification ensures that all generated energy is accurately represented within the PEC registry through systematic assignment of EAC IDs and PEC IDs. By following this methodology, the registry maintains high data integrity, traceability, and compliance with renewable energy accounting standards. All stakeholders are encouraged to adhere strictly to this specification to ensure consistent and transparent operations within the PEC registry.
+This methodology ensures that all generated energy is accurately represented within the PEC registry through systematic assignment of EAC IDs and PEC IDs. By following this methodology, the registry maintains high data integrity, traceability, and compliance with renewable energy accounting standards.&#x20;

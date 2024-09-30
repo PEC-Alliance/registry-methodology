@@ -71,7 +71,7 @@ To enable end-users to split PECs into smaller quantities of energy down to the 
 ### **Examples of the Splitting Process**
 
 * **Parent PEC:**
-  * **PEC ID:** `PEC101-20240928-20003-0001-0750000`$$f(x) = x * e^{2 pi i \xi x}$$
+  * **PEC ID:** `PEC101-20240928-20003-0001-0750000`
   * **Energy Amount:** 750,000 Wh (0.75 MWh)
 * **Split Request:**
   * Split into two child PECs:

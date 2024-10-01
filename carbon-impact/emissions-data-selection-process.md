@@ -1,55 +1,56 @@
-# Integrating Marginal Emissions Rate (MER) with PECs
+# Emissions Data Selection Process
 
 ## **Objective**
 
 This specification outlines the methodology for combining each PEC with the Marginal Emissions Rate (MER) based on the location and hour of generation. The goal is to calculate the carbon impact for each PEC by multiplying the energy amount by the corresponding MER. The registry automates the selection of the most accurate and appropriate MER data sources to eliminate complexity and bias for corporate renewable energy buyers.
 
-***
+## **Registry's Emissions Data Selection Process**
 
-## **Overview**
+**PEC Alliance Advisory Board Role**
 
-Each PEC represents a specific quantity of carbon-free energy generated at a particular location and time. By associating each PEC with the corresponding MER, the registry enables the calculation of the carbon impact (emissions avoided) for that specific quantity of energy.
-
-**Carbon Impact Calculation**
-
-**Formula:**
-
-$$
-Carbon Impact (kg CO2e)=Energy (MWh)×MER (kg CO2e/MWh)
-$$
-
-{% hint style="info" %}
-The MER reflects the emissions rate of the marginal unit on the grid at the time and location of generation. See the Appendix for more information.
-{% endhint %}
-
-**Data Source Selection:**\
-The PEC Alliance advisory board maintains a reference table selecting the best MER data provider for each region, ensuring accuracy and consistency.
-
-***
-
-### **Emissions Data Providers**
-
-* **Current Data Providers:**
-  * **REsurety**
-  * **WattTime**
-  * **UNFCCC (United Nations Framework Convention on Climate Change)**
+* **Responsibilities:**
+  * Evaluate and select the most accurate and appropriate MER data sources for each region.
+  * Maintain and update a reference table mapping regions to selected data providers.
+  * Consider user feedback and emerging data sources.
 * **Selection Criteria:**
-  * **Accuracy**
-  * **Transparency**
-  * **Data Availability**
-  * **Model Scope and Type**
-  * **Time and Locational Resolution**
+  * **Accuracy and Reliability:**\
+    Preference for data providers with proven track records.
+  * **Alignment with Registry Objectives:**\
+    Data should support the registry's goal of precise, hourly carbon impact calculation.
+  * **Compliance with Standards:**\
+    Ensure data sources comply with international standards and best practices.
+
+## **Handling Multiple Data Providers**
+
+**Regional Selection**
+
+* **Reference Table:**
+  * The registry maintains a reference table mapping each region to its selected MER data provider.
+*   **Example Table Format:**
+
+    <table><thead><tr><th width="139">Region</th><th width="110">Data Provider</th><th width="139">Model Type</th><th>Time Resolution</th><th>Locational Resolution</th></tr></thead><tbody><tr><td>India - West</td><td>WattTime</td><td>Statistical</td><td>Hourly</td><td>Zonal</td></tr><tr><td>USA - PJM</td><td>REsurety</td><td>Dispatch</td><td>Hourly</td><td>Nodal</td></tr><tr><td>Germany</td><td>UNFCCC</td><td>Heat Rate</td><td>Annual</td><td>Country</td></tr></tbody></table>
+
+## **Emissions Data Providers**
+
+* Current Data Providers:
+  * REsurety
+  * WattTime
+  * UNFCCC (United Nations Framework Convention on Climate Change)
+* Selection Criteria:
+  * Accuracy
+  * Transparency
+  * Data Availability
+  * Model Scope and Type
+  * Time and Locational Resolution
 
 ***
 
-## **Key Considerations for MER Data Selection**
-
-### **Model Scope**
+## **Model Scope**
 
 **Historical Short-Run Marginal Emissions:**\
 Focus on the immediate impact of changes in electricity demand or supply on emissions, reflecting the emissions rate of the marginal generator.
 
-### **Model Types**
+## **Model Types**
 
 **Statistical Models:**
 
@@ -84,7 +85,7 @@ Focus on the immediate impact of changes in electricity demand or supply on emis
   * Relies on assumptions that may not capture real-time operational nuances.
   * Less accurate for grids with diverse generation mixes.
 
-### **Time Resolution**
+## **Time Resolution**
 
 * **Hourly:**
   * **Preference:**\
@@ -99,7 +100,7 @@ Focus on the immediate impact of changes in electricity demand or supply on emis
     * Masks short-term fluctuations.
     * Less precise for calculating carbon impact of specific PECs.
 
-### **Locational Resolution**
+## **Locational Resolution**
 
 * **Nodal:**
   * **Description:**\
@@ -126,7 +127,7 @@ Focus on the immediate impact of changes in electricity demand or supply on emis
     * Too coarse for accurate PEC-level calculations.
     * Not recommended for hourly REC registries.
 
-### **Data Availability**
+## **Data Availability**
 
 * **Near Real-Time:**
   * **Benefits:**\
@@ -152,22 +153,6 @@ Focus on the immediate impact of changes in electricity demand or supply on emis
 
 ***
 
-## **Registry's Emissions Data Selection Process**
-
-**PEC Alliance Advisory Board Role**
-
-* **Responsibilities:**
-  * Evaluate and select the most accurate and appropriate MER data sources for each region.
-  * Maintain and update a reference table mapping regions to selected data providers.
-  * Consider user feedback and emerging data sources.
-* **Selection Criteria:**
-  * **Accuracy and Reliability:**\
-    Preference for data providers with proven track records.
-  * **Alignment with Registry Objectives:**\
-    Data should support the registry's goal of precise, hourly carbon impact calculation.
-  * **Compliance with Standards:**\
-    Ensure data sources comply with international standards and best practices.
-
 ## **Data Provider Integration**
 
 * **Technical Integration:**
@@ -179,30 +164,63 @@ Focus on the immediate impact of changes in electricity demand or supply on emis
 
 ***
 
-## **Calculation Methodology**
+## **User Transparency and Communication**
 
-### **Associating PECs with MER**
+**Data Source Disclosure**
 
-**Mapping Process:**
+* **Information Provided:**
+  * Data provider name.
+  * Model type and scope.
+  * Time and locational resolution.
+  * Date of data publication.
+* **Purpose:**
+  * Enhance user trust.
+  * Allow users to understand how carbon impacts are calculated.
 
-* Each PEC is tagged with metadata including:
-  * **Location:** Grid node, zone, or balancing authority area.
-  * **Time of Generation:** Specific hour and date.
-* Use this metadata to retrieve the corresponding MER from the selected data provider.
+**Emissions Data Updates**
 
-**Carbon Impact Calculation**
+* **Regular Updates:**
+  * Update MER data as new releases become available.
+  * Communicate significant changes or updates to users.
+* **Change Management:**
+  * Document changes in data sources or methodologies.
+  * Provide impact assessments if changes affect carbon impact calculations.
 
-$$
-Carbon Impact=Energy (MWh)×MER (kg CO2e/MWh)
-$$
+***
 
-**Example:**
+***
 
-* **PEC Energy:** 0.5 MWh
-* **MER:** 400 kg CO₂e/MWh
-* **Carbon Impact:** $$0.5×400=200 kg CO₂e$$
+## **Quality Assurance and Compliance**
 
-**Data Storage and Reporting**
+**Data Quality Checks**
+
+* **Validation Procedures:**
+  * Cross-reference MER data with historical trends.
+  * Check for anomalies or discrepancies.
+* **Audit Trails:**
+  * Maintain logs of data retrieval and calculation processes.
+
+### **Regulatory Compliance**
+
+* **Standards Alignment:**
+  * Ensure the methodology aligns with international standards (e.g., GHG Protocol).
+* **Reporting Obligations:**
+  * Provide necessary reports to regulatory bodies as required.
+
+***
+
+## **Technical Implementation**
+
+**System Architecture**
+
+* **Data Integration Layer:**
+  * APIs or data pipelines to ingest MER data from providers.
+* **Calculation Engine:**
+  * Automated system to perform carbon impact calculations upon PEC issuance or data updates.
+
+***
+
+### **Data Storage and Reporting**
 
 * **Record Keeping:**
   * Store calculated carbon impacts alongside PEC records.
@@ -234,48 +252,6 @@ $$
 * **Change Management:**
   * Document changes in data sources or methodologies.
   * Provide impact assessments if changes affect carbon impact calculations.
-
-***
-
-## **Handling Multiple Data Providers**
-
-**Regional Selection**
-
-* **Reference Table:**
-  * The registry maintains a reference table mapping each region to its selected MER data provider.
-*   **Example Table Format:**
-
-    <table><thead><tr><th width="139">Region</th><th width="110">Data Provider</th><th width="139">Model Type</th><th>Time Resolution</th><th>Locational Resolution</th></tr></thead><tbody><tr><td>California ISO (CAISO)</td><td>WattTime</td><td>Dispatch</td><td>Hourly</td><td>Nodal</td></tr><tr><td>PJM Interconnection</td><td>REsurety</td><td>Statistical</td><td>Hourly</td><td>Zonal</td></tr><tr><td>Germany</td><td>UNFCCC</td><td>Heat Rate</td><td>Hourly</td><td>Country</td></tr></tbody></table>
-
-***
-
-## **Quality Assurance and Compliance**
-
-**Data Quality Checks**
-
-* **Validation Procedures:**
-  * Cross-reference MER data with historical trends.
-  * Check for anomalies or discrepancies.
-* **Audit Trails:**
-  * Maintain logs of data retrieval and calculation processes.
-
-### **Regulatory Compliance**
-
-* **Standards Alignment:**
-  * Ensure the methodology aligns with international standards (e.g., GHG Protocol).
-* **Reporting Obligations:**
-  * Provide necessary reports to regulatory bodies as required.
-
-***
-
-## **Technical Implementation**
-
-**System Architecture**
-
-* **Data Integration Layer:**
-  * APIs or data pipelines to ingest MER data from providers.
-* **Calculation Engine:**
-  * Automated system to perform carbon impact calculations upon PEC issuance or data updates.
 
 ***
 

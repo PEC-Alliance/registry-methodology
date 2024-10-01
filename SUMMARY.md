@@ -15,8 +15,9 @@
 
 ## CARBON IMPACT
 
-* [Integrating Marginal Emissions Rate (MER) with PECs](carbon-impact/integrating-marginal-emissions-rate-mer-with-pecs.md)
+* [Emissions Data Selection Process](carbon-impact/emissions-data-selection-process.md)
 * [Emissions Source Hierarchy](carbon-impact/emissions-source-hierarchy.md)
+* [Calculation Methodology](carbon-impact/calculation-methodology.md)
 
 ## OTHER ATTRIBUTES
 

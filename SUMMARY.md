@@ -5,13 +5,14 @@
 ## PROCESS
 
 * [Project Onboarding](process/project-onboarding.md)
+* [EAC Registry Integration](process/eac-registry-integration.md)
+* [Copy of EAC Registry Integration](process/copy-of-eac-registry-integration.md)
 * [Data Collection](process/data-collection.md)
 * [Meter Data Quality Checks](process/meter-data-quality-checks.md)
 * [Split Meter Data](process/split-meter-data.md)
 * [Assign EAC IDs and  PEC IDs](process/assign-eac-ids-and-pec-ids.md)
 * [Splitting PECs into Smaller Quantities](process/splitting-pecs-into-smaller-quantities.md)
 * [Project Impact Report](process/project-impact-report.md)
-* [EAC Registry Integration](process/eac-registry-integration.md)
 
 ## CARBON IMPACT
 

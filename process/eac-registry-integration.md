@@ -1,32 +1,35 @@
 # EAC Registry Integration
 
-The process will follow a few key steps to ensure seamless interaction and avoid double counting:
+The Power Emissions Certificate (PEC) registry is designed to integrate seamlessly with existing Renewable Energy Certificate (REC) registries to enhance carbon accounting transparency and improve the operational efficiency of renewable energy procurement. This integration is essential for ensuring that environmental attributes associated with carbon-free energy (CFE) generation are accurately represented without double-counting, and that PECs provide additional value through enhanced data on carbon emissions reductions.
 
-1. **Renewable operators submit data to the PEC registry:** The renewable operator would send hourly generation data and the associated REC information to the PEC registry, similar to submitting traditional RECs to receive hourly RECs.
-2. **EAC Retirement:** To ensure that the environmental attributes of renewable energy generation are not double counted, the traditional RECs would be retired within the PEC registry. This step helps maintain the distinct value of the PECs and ensures that both instruments (RECs and PECs) do not claim the same environmental benefits.
-3. **PEC issuance:** With the retirement of traditional RECs, the PEC registry would then issue new PECs based on the locational marginal emissions data and the actual carbon impact of renewable energy generation.
-4. **PEC Transfer to Offtaker:** The newly issued PECs would be transferred to the offtaker (corporate buyer), who can then use these certificates to offset their Scope 2 impact-based emissions
+## **Configuration 1: Enhance Existing PPAs**
 
-This process aligns with the proposals designed by organizations like EnergyTag and others, which aim to create hourly RECs. By integrating PECs with existing REC registries and retirement processes, the environmental attributes of renewable energy can be tracked and verified more effectively, ensuring transparency and credibility in corporate sustainability reporting.
+In this configuration, Power Emissions Certificates (PECs) are issued based on RECs that have already been retired in the end user's REC registry account. This approach is ideal for companies or organizations that have entered into operational Power Purchase Agreements (PPAs). Since the RECs are already retired, the environmental attributes associated with the renewable energy have been claimed, and PECs can then be issued without the need to modify or interact further with the REC registry.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+PECs will be registered in the PEC registry under the same end user, providing additional data layers for emissions tracking, such as the marginal emissions reductions achieved by the associated renewable energy project. This configuration maintains simplicity, avoiding operational risks or complexities by ensuring that REC management processes remain unchanged while still allowing for advanced carbon accounting capabilities.
 
-## Double-Counting
+Key Benefits:
 
-A reliable and comprehensive Renewable Energy Certificate (REC) program ensures that multiple environmental claims are not made on the same unit of clean energy. In the absence of a clear mechanism to make such claims, a single unit of clean energy can be easily counted (and sold) multiple times by claiming the national grid average, power contracts, or geographical proximity to the plant.
+* **Minimal Complexity**: No changes to the REC registry are required.
+* **Risk Reduction**: Since no further transfers or retirements occur in the REC registry, this method avoids operational risks.
+* **Operational PPA Fit**: This approach suits organizations already retiring RECs under existing PPAs.
+* **Transparency and Data Enhancement**: The PEC registry adds emissions data without complicating REC transactions.
 
-Numerous governments, both national and local, as well as various voluntary programs, have put in place energy Renewable Energy Certificate (REC) schemes. These schemes are designed to assist energy producers, suppliers, and/or consumers in demonstrating their compliance with commitments or obligations regarding renewable energy. However, the quality and reliability of these schemes vary greatly. While compliance programs are trustworthy, voluntary ones are often of low quality or non-existent.
+<figure><img src="../.gitbook/assets/PEC EAC Integration.jpg" alt=""><figcaption></figcaption></figure>
 
-Examples include:
+## **Configuration 2: Enhance Unbundled RECs**
 
-### Renewable Energy Certificates (RECs)
+This second configuration involves transferring active RECs from a local REC registry to the PEC Registry trading account. Once the RECs are transferred, they are either canceled or retired within the PEC registry, allowing for the issuance of PECs. This configuration is particularly suitable for organizations purchasing unbundled RECs, as it enables the environmental attributes of the RECs to be integrated directly into the PEC registry and claimed by the end user.
 
-In the United States, there are several names for Renewable Energy Credits (RECs), also called Green tags or Tradable Renewable Certificates (TRCs). These are certificates that are issued as proof that one megawatt-hour (MWh) of electricity was generated from a renewable energy source and then fed into the power grid. RECs can be used by utilities to demonstrate compliance with the Renewable Portfolio Standard (RPS) in 29 states, or by individuals or organizations seeking to fulfill their voluntary commitment to using renewable energy sources.
+By managing both REC retirement and PEC issuance within the PEC registry, this approach offers comprehensive tracking and transparency, ensuring that the environmental claims related to the energy are clearly linked to specific emissions reductions. After PEC issuance, the end user can claim the environmental attributes of both the REC and the associated emissions reductions, reflecting the grid’s carbon intensity at the time and place of energy generation.
 
-### GUARANTEES OF ORIGIN (GOs)
+Key Benefits:
 
-In the European Union, each GO represents 1 MWh of renewable electricity and has the same quality as RECs. However, GOs are issued by EU governments and are recognized in all EU Member States, while RECs are issued by energy companies and are not accepted by all countries. Just like RECs and ROCs, GOs are tradable and can be used by companies to fulfill their energy greening commitments.
+* **Comprehensive Emissions Tracking**: Allows for enhanced transparency by tracking both REC and PEC attributes within the PEC registry.
+* **Ideal for Unbundled RECs**: Ensures the environmental attributes of unbundled RECs are transferred, retired, and tracked within a single system.
+* **Imported RECs**: RECs effectively become part of the PEC registry, enabling users to claim both energy and emissions attributes.
+* **Enhanced Corporate Carbon Accounting**: Enables companies to align energy procurement with emissions reduction goals more precisely, supporting advanced carbon accounting strategies such as 24/7 matching.
 
-### Renewable Obligation Certificates (ROCs)
+<figure><img src="../.gitbook/assets/PEC EAC Integration - config 1.jpg" alt=""><figcaption></figcaption></figure>
 
-In the UK, electricity suppliers are required to generate an increasing proportion of electricity from renewable sources under the Renewables Obligation (RO). To fulfill this requirement, suppliers must provide the regulator with sufficient ROCs, which they can obtain from eligible renewable power generators in the UK. Each ROC represents 1MWh of electricity generated, though some technologies may receive more ROCs (for instance, offshore wind receives two ROCs per MWh). The RO was closed for new projects in 2017.
+Both configurations enhance renewable energy procurement through the PEC registry by offering flexibility, transparency, and advanced carbon tracking capabilities. These integrations ensure that organizations can adopt PECs without disrupting their existing REC strategies while gaining access to more precise carbon accounting data to meet sustainability objectives.

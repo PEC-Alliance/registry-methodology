@@ -231,30 +231,6 @@ Focus on the immediate impact of changes in electricity demand or supply on emis
 
 ***
 
-## **User Transparency and Communication**
-
-**Data Source Disclosure**
-
-* **Information Provided:**
-  * Data provider name.
-  * Model type and scope.
-  * Time and locational resolution.
-  * Date of data publication.
-* **Purpose:**
-  * Enhance user trust.
-  * Allow users to understand how carbon impacts are calculated.
-
-**Emissions Data Updates**
-
-* **Regular Updates:**
-  * Update MER data as new releases become available.
-  * Communicate significant changes or updates to users.
-* **Change Management:**
-  * Document changes in data sources or methodologies.
-  * Provide impact assessments if changes affect carbon impact calculations.
-
-***
-
 ## **Conclusion**
 
 Integrating MER with PECs enhances the value proposition of the hourly REC registry by providing precise, actionable carbon impact data. By automating data source selection and adhering to rigorous standards, the registry ensures accuracy, transparency, and reliability for corporate renewable energy buyers and other stakeholders.
